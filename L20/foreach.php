@@ -16,7 +16,8 @@ $numbers =  array(345, 397, 676, 385, 2657, 5784);
 foreach($numbers as $number){
 
     echo $number . "<br>";
-    
+
+    //foreach can find the end of the array without being told.
 }
 
 ?>
