@@ -1,9 +1,13 @@
 
 <?php
 
-if(isset($_POST['password'])){
+if(isset($_POST['submit'])){
 
-echo "password works";
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+echo "Hello " . $username;
+echo ", your password is: " . $password;
 
 }
 
@@ -20,9 +24,9 @@ echo "password works";
 <body>
 
 <form action="form.php" method="post">
-    <input type ="text" placeholder="Username" name="username">
+    <input type ="text" name="username" placeholder="Username">
     <br>
-    <input type ="password" placeholder="Password" name="password">
+    <input type ="password" name="password" placeholder="Password">
     <br>
     <input type ="submit" name="submit">
 </form>
