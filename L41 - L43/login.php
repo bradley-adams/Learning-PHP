@@ -5,8 +5,22 @@ if(isset($_POST["submit"])){
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    echo $username . "<br>";
-    echo $password;
+    $connection = mysqli_connect('localhost', 'root', '', 'loginapp'); //default username is root, password is empty and users is the table.
+
+    if($connection){
+        echo "Connected";
+    } else {
+        die("Database Connection Failed");
+    }
+
+//    if($username && $password){ //giving you a true or false boolean value.
+//        echo "Welcome " . $username . "<br>";
+//        echo $password;
+//    } else {
+//        echo "No username or password provided";
+//    }
+
+
 }
 
 ?>
