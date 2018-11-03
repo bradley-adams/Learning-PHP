@@ -34,7 +34,7 @@
         </div>
 
       <div class="form-group">
-          <select name="" id="">
+          <select name="id" id="">
               <option>1</option>
           </select>
       </div>
