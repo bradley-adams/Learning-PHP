@@ -6,7 +6,6 @@ $expiration = time() + (60*60*24*7);
 
 setcookie($name, $value, $expiration);
 
-
 ?>
 
 <!doctype html>
@@ -20,7 +19,18 @@ setcookie($name, $value, $expiration);
 </head>
 <body>
 
+<?php
 
+if(isset($_COOKIE['Bradley'])){
+
+    $someOne = $_COOKIE['Bradley'];
+    echo $someOne;
+} else {
+    $someOne = "no one";
+    echo $someOne;
+}
+
+?>
 
 </body>
 </html>
